@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+set -u
+set -o pipefail
+
+#   A simple script to hold common variables for angsd-wrapper
+
+#   Define a list of samples
+SAMPLE_LIST=${HOME}/Deleterious_mutation_project/wild_species_ID/group_bam/sample_list
+
+#   Define a list of inbreeding coefficients
+#	This should end in '_.indF'
+SAMPLE_INBREEDING=${HOME}/Deleterious_mutation_project/wild_species_ID/group_bam/InbreedingCoefficients.indF
+
+#   Ancestral sequence
+ANC_SEQ=/home/morrellp/shared/Datasets/NGS/Alignments/Deleterious_Mutations/For_ANGSD/Hbulbosum_UMN.fa
+
+#   Reference sequence
+REF_SEQ=/home/morrellp/shared/References/Reference_Sequences/Barley/Morex/Morex_Reference.fasta
+
+#   Name the project
+PROJECT=Barley
+
+#   Where do we put the outfiles?
+    #   Note, the final outdirectory will be
+    #   ${SCRATCH}/${PROJECT}/<name_of_program/>
+SCRATCH=${HOME}/scratch
+
+#   Define the region being looked at
+#       Optional, but ANGSD is expensive to run without specifying regions to look at
+REGIONS=${HOME}/Deleterious_mutation_project/wild_species_ID/group_bam/test_region.bed

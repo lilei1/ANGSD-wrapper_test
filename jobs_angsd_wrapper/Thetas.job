@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#PBS -l mem=22gb,nodes=1:ppn=8,walltime=24:00:00
+#PBS -m abe
+#PBS -M llei@umn.edu
+#PBS -q lab
+
+ANGSD_WRAPPER=${HOME}/software/angsd-wrapper
+CON_DIR=${HOME}/Deleterious_mutation_project/wild_species_ID/group_bam/Configuration_Files
+
+${ANGSD_WRAPPER}/angsd-wrapper Thetas ${CON_DIR}/Thetas_Config

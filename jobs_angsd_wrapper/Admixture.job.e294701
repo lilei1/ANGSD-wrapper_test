@@ -1,0 +1,16 @@
+	-> Dumping file: /home/morrellp/llei/scratch/Barley/Admixture/Barley.2.log
+	-> Dumping file: /home/morrellp/llei/scratch/Barley/Admixture/Barley.2.filter
+Input: lname=/home/morrellp/llei/scratch/Barley/SFS/Barley_SFSOut.beagle.gz nPop=2, fname=(null) qname=(null) outfiles=/home/morrellp/llei/scratch/Barley/Admixture/Barley.2
+Setup: seed=1450396526 nThreads=16 method=1
+Convergence: maxIter=2000 tol=0.000010 tolLike50=0.100000 dymBound=0
+Filters: misTol=0.050000 minMaf=0.050000 minLrt=0.000000 minInd=0
+Input file has dim: nsites=7530291 nind=12
+Input file has dim (AFTER filtering): nsites=81816 nind=12
+iter[start] like is=1442397.937700
+iter[50] like is=-673640.267438 thres=0.000070
+EM accelerated Thread has reached convergence with tol 0.000010
+best like=-673637.626374 after 65 iterations
+	-> Dumping file: /home/morrellp/llei/scratch/Barley/Admixture/Barley.2.qopt
+	-> Dumping file: /home/morrellp/llei/scratch/Barley/Admixture/Barley.2.fopt.gz
+	[ALL done] cpu-time used =  358.31 sec
+	[ALL done] walltime used =  340.00 sec
